@@ -4,7 +4,7 @@
   "description": "A Git client for pedants like David",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "standard --fix && electron ."
   },
   "repository": "https://github.com/dnahodil/git-perfector",
   "keywords": [
@@ -13,6 +13,7 @@
   "author": "David Nahodil (@dnahodil)",
   "license": "MIT",
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron": "~1.7.8",
+    "standard": "^10.0.3"
   }
 }
