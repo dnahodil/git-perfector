@@ -4,7 +4,7 @@
   "description": "A Git client for pedants like David",
   "main": "main.js",
   "scripts": {
-    "start": "standard --fix && electron ."
+    "start": "standard --fix app/*.js && electron ."
   },
   "repository": "https://github.com/dnahodil/git-perfector",
   "keywords": [
