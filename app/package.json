@@ -1,21 +1,17 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "git-perfector",
+  "version": "0.0.1",
+  "description": "A Git client for pedants like David",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/dnahodil/git-perfector",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Git"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "David Nahodil (@dnahodil)",
+  "license": "MIT",
   "devDependencies": {
     "electron": "~1.7.8"
   }
