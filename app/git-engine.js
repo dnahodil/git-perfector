@@ -1,11 +1,12 @@
-const projectDir = '/Users/dnahodil/dnahodil-github/test-repo/'
-const sg = require('simple-git')(projectDir);
+exports.GitEngine = class {
+  constructor(repoPath) {
+    this.git = require('simple-git')(repoPath);
 
-console.log(`Loaded git in ${projectDir}`)
-
-sg.checkIsRepo((_, isRepo) => {
-  if (!isRepo) throw `${projectDir} is not a Git repo`
-})
+    this.git.checkIsRepo((_, isRepo) => {
+      if (!isRepo) throw `${projectDir} is not a Git repo`
+    })
+  }
+}
 
 /*
 .add([fileA, ...], handlerFn) 	adds one or more files to be under source control
