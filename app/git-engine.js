@@ -2,9 +2,17 @@ exports.GitEngine = class {
   constructor(repoPath) {
     this.git = require('simple-git')(repoPath);
 
+    this.validateRepo()
+  }
+  
+  validateRepo() {
     this.git.checkIsRepo((_, isRepo) => {
       if (!isRepo) throw `${projectDir} is not a Git repo`
     })
+  }
+
+  canPerformUnsafeOperation() {
+    return this.git.branch({}, (_, { current }) => current != "master")
   }
 }
 
