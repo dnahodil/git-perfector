@@ -9,9 +9,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
   </head>
   <body>
-    <h1>Git Perfector 0.0.1</h1>
-    <div class="alert alert-primary" role="alert">
-      Got Bootstrap in, yo.
-    </div>
+    <div class="container">
+      <h1>Git Perfector 0.0.1</h1>
+      
+      <div id="stateDisplay">
+        Not loaded :'(
+      </div>
+   </div>
+
+    <script>
+      require('./renderer.js')
+    </script>
   </body>
 </html>
